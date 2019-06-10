@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mecado de Abasto - Alquilar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="main.js"></script>
+</head>
+<body style="background-color:#EEF0F0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">MDA-Lavalle</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="alquilar.html">Alquilar
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="puestos.html">Puestos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container espaciado">
+        <form>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Nombre</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" placeholder="Nombre del Cliente">
+                </div>
+            </div>
+    
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Apellido</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" placeholder="Apellido del Cliente">
+                </div>
+            </div>
+    
+            <fieldset disabled="disabled">
+                <div class="form-group row">
+                    <label for="disabledTextInput" class="col-sm-2 col-form-label">Empresa</label>
+                    <div class="col-sm-10">
+                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Nombre de la Empresa">
+                    </div>
+                </div>
+            </fieldset>
+    
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">CUIL</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="number" placeholder="CUIL del Cliente/Empresa">
+                </div>
+            </div>
+    
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">CUIL Responsable</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="number" placeholder="CUIL del Responsable de Mercado">
+                </div>
+            </div>
+            <div class="form-group row"> 
+                <label class="col-sm-2 col-form-label">Puesto</label>
+                <div class="col-sm-10">
+                  <select class="custom-select">
+                    <option selected>Selecccione un Puesto</option>
+                    <option value="1">Local, con cámara refrigerante, con techo</option>
+                    <option value="2">Local, sin cámara refrigerante, con techo</option>
+                    <option value="3">Local, con cámara refrigerante, sin techo</option>
+                  </select>
+
+                  <br><br>
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary">Confirmar Alquiler</button>
+                        </div>
+                    </div>
+              </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
